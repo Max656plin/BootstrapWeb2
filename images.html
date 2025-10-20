@@ -1,0 +1,89 @@
+<!-- Imagenes HTML realizado por Máximo Casado Giner-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 - Ejemplos de Imágenes</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-5">Ejemplos de Imágenes con Bootstrap 5</h1>
+
+    <div class="row g-4">
+
+      <!-- Imagen responsive -->
+      <div class="col-12 text-center">
+        <img src="img/carousel1.jpg" class="img-fluid" alt="PrimerEjercicio">
+        <p>Imagen con clase <code>.img-fluid</code> (se adapta al ancho del contenedor)</p>
+        <hr>
+      </div>
+
+      <!-- Imagen tipo miniatura -->
+      <div class="col-12 text-center">
+        <img src="img/bg2.jpg" class="img-thumbnail" alt="SegundoEjercicio" width="200" height="200">
+        <p>Imagen con clase <code>.img-thumbnail</code> (borde y padding tipo miniatura)</p>
+        <hr>
+      </div>
+
+      <!-- Imágenes flotantes izquierda/derecha -->
+      <div class="col-12">
+        <img src="img/bg.jpg" class="rounded float-start me-2" alt="TercerEjercicio" width="200" height="200">
+        <img src="img/bg4.jpg" class="rounded float-end ms-2" alt="TercerEjercicio" width="200" height="200">
+        <p class="text-center mt-3">
+          Imágenes con las clases <code>.rounded</code>, <code>.float-start</code> y <code>.float-end</code>
+        </p>
+        <div class="clearfix"></div> 
+        <hr>
+      </div>
+
+      <!-- Imagen centrada con bloque -->
+      <div class="col-12 text-center">
+        <img src="img/bg6.jpg" class="rounded mx-auto d-block" alt="CuartoEjercicio" width="200" height="200">
+        <p>Imagen centrada con las clases <code>.rounded</code>, <code>.mx-auto</code> y <code>.d-block</code></p>
+        <hr>
+      </div>
+
+      <!--  Imagen centrada con text-center -->
+      <div class="col-12 text-center">
+        <img src="img/bg4.jpg" class="rounded" alt="QuintoEjercicio" width="200" height="200">
+        <p>Imagen centrada con <code>.text-center</code> y <code>.rounded</code></p>
+        <hr>
+      </div>
+
+      <!--  Imagen circular -->
+      <div class="col-12 text-center">
+        <img src="img/bg5.jpg" class="rounded-circle" alt="SextoEjercicio" width="200" height="200">
+        <p>Imagen con clase <code>.rounded-circle</code> (recorte circular)</p>
+        <hr>
+      </div>
+
+      <!--  Imagen flotante con texto alrededor -->
+      <div class="col-12">
+        <img src="img/bg3.jpg" class="float-start me-3 rounded" alt="SeptimoEjercicio" width="150" height="150">
+        <p>
+          Ejemplo de texto que fluye alrededor de una imagen flotante con las clases
+          <code>.float-start</code> y <code>.me-3</code> (margen a la derecha).
+          Bootstrap permite que el texto se ajuste automáticamente a la posición de la imagen.
+        </p>
+        <div class="clearfix"></div>
+        <hr>
+      </div>
+
+      <!--  Imagen dentro de una card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card shadow-sm">
+          <img src="img/bg6.jpg" class="card-img-top" alt="OctavoEjercicio">
+          <div class="card-body">
+            <p class="card-text">Imagen con clase <code>.card-img-top</code> dentro de un componente <code>.card</code>.</p>
+          </div>
+        </div>
+      </div>
+  	</div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
